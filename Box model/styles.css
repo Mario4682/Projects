@@ -1,0 +1,36 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box-sizing to border-box for easier layout */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Apply basic styles to the banner image */
+.banner-image {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    height: 300px; /* Adjust the height as needed */
+}
+
+/* Apply styles to the login/register section */
+.login-register {
+    background-color: #f1f1f1; /* Set your desired background color */
+    padding: 20px;
+}
+
+/* Apply styles to the products section */
+.products {
+    padding: 20px;
+}
+
+/* Apply styles to the about us section */
+.about-us {
+    background-color: #f1f1f1; /* Set your desired background color */
+    padding: 20px;
+}
