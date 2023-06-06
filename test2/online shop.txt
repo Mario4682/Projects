@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cats and Dogs Website</title>
+    <style>
+        /* Add your own styles or use CSS libraries */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Cats and Dogs Website</h1>
+    </header>
+
+    <nav>
+        <!-- Website navigation, if needed -->
+    </nav>
+
+    <main>
+        <section id="cats">
+            <h2>Cats</h2>
+            <ul id="cat-list">
+                <!-- Add a list of cats here -->
+            </ul>
+        </section>
+
+        <section id="dogs">
+            <h2>Dogs</h2>
+            <ul id="dog-list">
+                <!-- Add a list of dogs here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cats and Dogs Website - All rights reserved</p>
+    </footer>
+
+    <script>
+        // JavaScript code
+        // You can use JavaScript to dynamically add content to the website
+        // For example, retrieve data from a database or make API requests
+
+        // Example: Adding cats to the cat list
+        const catList = document.getElementById('cat-list');
+
+        // Create an array of cat objects with information
+        const cats = [
+            { name: 'Mia', breed: 'Persian cat' },
+            { name: 'Oliver', breed: 'British Shorthair' },
+            { name: 'Luna', breed: 'Siamese cat' }
+        ];
+
+        // Loop through the cat array and add items to the ul
+        cats.forEach(cat => {
+            const li = document.createElement('li');
+            li.textContent = `${cat.name} - ${cat.breed}`;
+            catList.appendChild(li);
+        });
+
+        // Example: Adding dogs to the dog list
+        const dogList = document.getElementById('dog-list');
+
+        // Create an array of dog objects with information
+        const dogs = [
+            { name: 'Max', breed: 'Golden Retriever' },
+            { name: 'Bella', breed: 'Labrador Retriever' },
+            { name: 'Charlie', breed: 'German Shepherd' }
+        ];
+
+        // Loop through the dog array and add items to the ul
+        dogs.forEach(dog => {
+            const li = document.createElement('li');
+            li.textContent = `${dog.name} - ${dog.breed}`;
+            dogList.appendChild(li);
+        });
+    </script>
+</body>
+</html>

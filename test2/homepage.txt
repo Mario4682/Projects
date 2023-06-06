@@ -1,0 +1,30 @@
+!DOCTYPE html
+html
+  head
+    titleHomepagetitle
+    link rel=stylesheet href=styles.css
+  head
+  body
+    header
+      h1My Websiteh1
+      nav
+        ul
+          lia href=#Homeali
+          lia href=#Aboutali
+          lia href=#Contactali
+        ul
+      nav
+    header
+    main
+      section
+        h2Welcome to my website!h2
+        pThis is the homepage of my website. Feel free to browse around and check out my other pages.p
+        button id=cta-buttonLearn morebutton
+      section
+    main
+    footer
+      p&copy; 2023 My Websitep
+    footer
+    script src=script.jsscript
+  body
+html
