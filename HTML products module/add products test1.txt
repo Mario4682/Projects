@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website Design HTML CSS </title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        var name = "Mario";
+        var lastName = "Ivanov";
+        var age = 25;
+        var address = "Plovdiv j.k Trakiq bl 5";
+
+        var products = [
+          {
+            name: "Samsung Galaxy 4",
+            price: 12,
+            category: "gsm",
+            inStock: true
+
+          },
+          {
+            name: "QQ watch",
+            price: 33,
+            category: "watches",
+            inStock: false
+
+          }
+        ];
+
+        function shoppingCart () {
+          // console.log(`Customer name ${name} ${lastName}`);
+          console.log(products);
+          debugger
+        } 
+
+
+    </script>>
+    
+  </head>
+  <body>
+
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">Online Shop</a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><button onclick="shoppingCart()">Shopping Cart</button></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="img"></div>
+    <div class="center">
+      <div class="title">Simple Page  Website CSS Box Model </div>
+      <div class="sub_title"> HTML & CSS Only</div>
+      <div class="btns">
+        <button>Learn More</button>
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="modal"></div>
+  </body>
+</html>

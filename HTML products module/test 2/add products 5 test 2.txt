@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Module</title>
+  <style>
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .product .name {
+      font-weight: bold;
+    }
+    .product .price {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div id="productModule"></div>
+
+  <script>
+    // Array containing product information
+    var products = [
+      { name: "Nokia asha 210", price: "$10.00" },
+      { name: "Lenovo ThinkPad", price: "$15.00" },
+      { name: "Dell Latitude", price: "$20.00" },
+      { name: "Apple", price: "$25.00" },
+      { name: "Huawei", price: "$30.00" }
+    ];
+
+    // Get the product module container element
+    var productModule = document.getElementById("productModule");
+
+    // Loop through the products array and create HTML elements dynamically
+    for (var i = 0; i < products.length; i++) {
+      // Create product container element
+      var productContainer = document.createElement("div");
+      productContainer.className = "product";
+
+      // Create product name element
+      var nameElement = document.createElement("div");
+      nameElement.className = "name";
+      nameElement.textContent = products[i].name;
+
+      // Create product price element
+      var priceElement = document.createElement("div");
+      priceElement.className = "price";
+      priceElement.textContent = products[i].price;
+
+      // Append name and price elements to the product container
+      productContainer.appendChild(nameElement);
+      productContainer.appendChild(priceElement);
+
+      // Append the product container to the module
+      productModule.appendChild(productContainer);
+    }
+  </script>
+</body>
+</html>
