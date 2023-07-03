@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website Design HTML CSS </title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        var name = "Mario";
+        var lastName = "Ivanov";
+        var age = 25;
+        var address = "Plovdiv j.k Trakiq bl 5";
+
+        var products = [
+          {
+            name: "Samsung Galaxy 4",
+            price: 12,
+            category: "gsm",
+            inStock: true
+
+          },
+          {
+            name: "QQ watch",
+            price: 33,
+            category: "watches",
+            inStock: false
+
+          }
+        ];
+
+        function shoppingCart () {
+          // console.log(`Customer name ${name} ${lastName}`);
+          console.log(products);
+          debugger
+        } 
+// Define a shopping cart array
+var shoppingCart = [];
+
+// Function to add a product to the shopping cart
+function addToCart(productName) {
+    shoppingCart.push(productName);
+    console.log(productName + " has been added to the cart.");
+}
+
+// Example usage:
+addToCart("Lenovo "); // Add Product 1 to the cart
+addToCart("Huawei "); // Add Product 2 to the cart
+addToCart("Motorola "); // Add Product 3 to the cart
+addToCart("Apple "); // Add Product 4 to the cart
+addToCart("Nokia 5"); // Add Product 5 to the cart
+
+console.log("Shopping Cart:", shoppingCart); // Output the contents of the shopping cart
+debugger 
+
+
+    </script>>
+    
+  </head>
+  <body>
+
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">Online Shop</a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Payment Methods</a></li>
+          <li><button onclick="shoppingCart()">Shopping Cart</button></li>
+        
+          </div>
+          
+        </ul>
+      </div>
+    </nav>
+    <div class="img"></div>
+    <div class="center">
+      <div class="title">Simple Page  Website CSS Box Model </div>
+      <div class="sub_title"> HTML & CSS Only</div>
+      <div class="btns">
+        <button>Learn More</button>
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="modal"></div>
+  </body>
+</html>
+
+
+ 
