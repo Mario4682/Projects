@@ -1,0 +1,64 @@
+body{
+    background-color: aquamarine;
+}
+#contener{
+    background-color: cadetblue;
+    margin: auto;
+    width: 910px;
+    padding: 10px;
+    overflow: hidden;
+  
+}
+#width1{
+    background-color: blue;
+    width: 890px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    
+}
+#width2{
+    background-color: green;
+    width: 890px;
+    height: 50px;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#con{
+    background-color: white;
+    width: 890px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#consub1{
+    background-color: violet;
+    width: 580px;
+    height: 280px;
+    margin: 10px;
+    float: left;
+
+}
+#consub2{
+    background-color: yellow;
+    width: 270px;
+    height: 280px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#buttom{
+    background-color: white;
+    width: 215px;
+    height: 200px;
+    margin:auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+
+}
